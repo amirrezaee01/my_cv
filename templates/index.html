@@ -1,342 +1,252 @@
 {% load static %}
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>قالب تک صفحه بوت استرپ The Card :: دریافت شده از وب روبیک</title>
-    <!-- Start Stylesheets -->
-    <link
-      rel="stylesheet"
-      href="{% static 'css/bootstrap-rtl.min.css' %}"
-      type="text/css"
-    />
-    <link
-      rel="stylesheet"
-      href="{% static 'slick/slick.css' %}"
-      type="text/css"
-    />
-    <link
-      rel="stylesheet"
-      href="{% static 'slick/slick-theme.css' %}"
-      type="text/css"
-    />
-    <link
-      rel="stylesheet"
-      href="{% static 'css/magnific-popup.css' %}"
-      type="text/css"
-    />
-    <link
-      rel="stylesheet"
-      href="{% static 'css/style.css' %}"
-      type="text/css"
-    />
-    <!-- End Stylesheets -->
-  </head>
-  <body>
-    <!-- Loader -->
-    <div id="loader-wrapper">
-      <div id="loader"></div>
-      <div class="loader-section section-left"></div>
-      <div class="loader-section section-right"></div>
+<html lang="fa">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>قالب تک صفحه بوت استرپ The Card :: دریافت شده از وب روبیک</title>
+  <!-- Start Stylesheets -->
+  <link rel="stylesheet" href="{% static 'css/bootstrap-rtl.min.css' %}" type="text/css" />
+  <link rel="stylesheet" href="{% static 'slick/slick.css' %}" type="text/css" />
+  <link rel="stylesheet" href="{% static 'slick/slick-theme.css' %}" type="text/css" />
+  <link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}" type="text/css" />
+  <link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css" />
+  <!-- End Stylesheets -->
+</head>
+
+<body>
+
+  <!-- Loader -->
+  <div id="loader-wrapper">
+    <div id="loader"></div>
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+  </div>
+
+  <div class="tm-main-container">
+    <div class="tm-top-container">
+      <!-- Menu -->
+      <nav id="tmNav" class="tm-nav">
+        <a class="tm-navbar-menu" href="#">منو</a>
+        <ul class="tm-nav-links">
+          <li class="tm-nav-item active">
+            <a href="#" data-linkid="0" data-align="right" class="tm-nav-link">صفحه نخست</a>
+          </li>
+          <li class="tm-nav-item">
+            <a href="#" data-linkid="1" data-align="right" class="tm-nav-link">درباره من</a>
+          </li>
+          <li class="tm-nav-item">
+            <a href="#" data-linkid="2" data-align="middle" class="tm-nav-link">رزومه</a>
+          </li>
+          <li class="tm-nav-item">
+            <a href="#" data-linkid="3" data-align="left" class="tm-nav-link">تماس با من</a>
+          </li>
+        </ul>
+      </nav>
+
+
+      <!-- Site header -->
     </div>
+    <!-- tm-top-container -->
 
-    <div class="tm-main-container">
-      <div class="tm-top-container">
-        <!-- Menu -->
-        <nav id="tmNav" class="tm-nav">
-          <a class="tm-navbar-menu" href="#">منو</a>
-          <ul class="tm-nav-links">
-            <li class="tm-nav-item active">
-              <a href="#" data-linkid="0" data-align="right" class="tm-nav-link"
-                >صفحه نخست</a
-              >
-            </li>
-            <li class="tm-nav-item">
-              <a href="#" data-linkid="1" data-align="right" class="tm-nav-link"
-                >درباره من</a
-              >
-            </li>
-            <li class="tm-nav-item">
-              <a
-                href="#"
-                data-linkid="2"
-                data-align="middle"
-                class="tm-nav-link"
-                >رزومه</a
-              >
-            </li>
-            <li class="tm-nav-item">
-              <a href="#" data-linkid="3" data-align="left" class="tm-nav-link"
-                >تماس با من</a
-              >
-            </li>
-          </ul>
-        </nav>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+          <!-- Site content -->
+          <div class="tm-content">
+            <!-- Section 0 Introduction -->
+            <section class="tm-section tm-section-0">
+              <h2 class="tm-section-title mb-3 font-weight-bold">
+                من چکار میکنم
+              </h2>
+              <div class="tm-textbox tm-bg-dark">
+                <p>
+                  من برنامه‌نویسی جنگو کار می‌کنم. به عنوان یک برنامه‌نویس جنگو، توانایی‌های متعددی دارم که به من اجازه
+                  می‌دهد وب‌سایت‌ها و برنامه‌های وب قدرتمند و کارآمد ایجاد کنم.
+                </p>
+                <h2>توانایی‌های من:</h2>
+                <ul>
+                  <li><strong>توسعه وب‌سایت:</strong> می‌توانم از صفر تا صد یک وب‌سایت را طراحی و پیاده‌سازی کنم. از
+                    طراحی دیتابیس گرفته تا کدنویسی بخش‌های فرانت‌اند و بک‌اند.</li>
+                  <li><strong>تغییر و بهبود صفحات وب:</strong> توانایی تغییر و بهینه‌سازی صفحات وب موجود را دارم.
+                    می‌توانم ظاهر وب‌سایت را بهبود دهم، ویژگی‌های جدید اضافه کنم و باگ‌های موجود را برطرف کنم.</li>
+                  <li><strong>مدیریت داده‌ها:</strong> با استفاده از جنگو، می‌توانم به راحتی داده‌ها را مدیریت کنم. از
+                    ایجاد و ویرایش مدل‌های داده تا پیاده‌سازی سیستم‌های مدیریت محتوا (CMS).</li>
+                  <li><strong>امنیت:</strong> با توجه به ویژگی‌های امنیتی جنگو، می‌توانم وب‌سایت‌های امنی ایجاد کنم که
+                    در برابر حملات مختلف مقاوم باشند.</li>
+                  <li><strong>ارتباط با سایر سیستم‌ها:</strong> می‌توانم وب‌سایت‌ها را با سایر سیستم‌ها و سرویس‌ها
+                    یکپارچه کنم، مانند سیستم‌های پرداخت آنلاین، API‌ها و سرویس‌های خارجی دیگر.</li>
+                  <li><strong>بهینه‌سازی عملکرد:</strong> بهینه‌سازی سرعت و کارایی وب‌سایت‌ها یکی از تخصص‌های من است.
+                    می‌توانم از روش‌های مختلفی برای کاهش زمان بارگذاری صفحات و بهبود عملکرد کلی سایت استفاده کنم.</li>
+                </ul>
+                <p>
+                  به طور کلی، هر روز با چالش‌ها و پروژه‌های جدیدی روبرو می‌شوم که به من فرصت می‌دهد مهارت‌هایم را بهبود
+                  بخشم و تجربه‌های جدید کسب کنم.
+                </p </div>
+                <a href="#" id="tm_about_link" data-linkid="1" class="tm-link">بیشتر بدانید</a>
+            </section>
 
-        <!-- Site header -->
-      </div>
-      <!-- tm-top-container -->
+            <!-- Section 1 About Me -->
+            <section class="tm-section tm-section-1">
+              <div class="tm-textbox tm-textbox-2 tm-bg-dark">
+                <h2 class="tm-text-blue mb-4">درباره من</h2>
+                <p>
+                  من امیرمحمد رضایی هستم، دانشجوی رشته کامپیوتر و برنامه‌نویس جنگو با تجربه در طراحی و توسعه وب‌سایت‌ها
+                  و سیستم‌های وب. با علاقه به کار تیمی و توانمندی در حل مسائل، همیشه در حال بهبود عملکرد و بهینه‌سازی
+                  فرآیندها هستم.
+                </p>
+              </div>
 
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-md-12">
-            <!-- Site content -->
-            <div class="tm-content">
-              <!-- Section 0 Introduction -->
-              <section class="tm-section tm-section-0">
-                <h2 class="tm-section-title mb-3 font-weight-bold">
-                  من چکار میکنم
-                </h2>
-                <div class="tm-textbox tm-bg-dark">
-                  <p>
-                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و
-                    با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه
-                    و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی
-                    تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای
-                    کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و
-                    آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم
-                    افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص
-                    طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد.
-                  </p>
-                  <p class="mb-0">
-                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و
-                    با استفاده از طراحان گرافیک است.
-                  </p>
-                </div>
-                <a href="#" id="tm_about_link" data-linkid="1" class="tm-link"
-                  >بیشتر بدانید</a
-                >
-              </section>
-
-              <!-- Section 1 About Me -->
-              <section class="tm-section tm-section-1">
-                <div class="tm-textbox tm-textbox-2 tm-bg-dark">
-                  <h2 class="tm-text-blue mb-4">درباره من</h2>
-                  <p class="mb-4">
-                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و
-                    با استفاده از طراحان گرافیک است.
-                  </p>
-                  <p class="mb-4">
-                    چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که
-                    لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای
-                    متنوع با هدف بهبود ابزارهای کاربردی می باشد.
-                  </p>
-                  <a
-                    href="#"
-                    id="tm_work_link"
-                    data-linkid="2"
-                    class="tm-link m-0"
-                    >رزومه من</a
-                  >
-                </div>
-              </section>
-
-              <!-- Section 2 Work (Gallery) -->
-              <section class="tm-section tm-section-2 mx-auto">
-                <div class="grid tm-gallery">
-                  <figure class="effect-goliath tm-gallery-item">
-                    <img
-                      src="{% static 'pics/01.jpg' %}"
-                      alt="Image 1"
-                      class=""
-                    />
-                    <figcaption>
-                      <h2>عکاسی از <span>حیوانات</span></h2>
-                      <p>محل نمایش توضیحاتی در مورد رزومه</p>
-                      <a href="{% static 'pics/01.jpg' %}">View more</a>
-                    </figcaption>
-                  </figure>
-                  <figure class="effect-goliath tm-gallery-item">
-                    <img
-                      src="{% static 'pics/02.jpg' %}"
-                      alt="Pretty Girl"
-                      class=""
-                    />
-                    <figcaption>
-                      <h2>عکاسی <span>چهره</span></h2>
-                      <p>محل نمایش توضیحاتی در مورد رزومه</p>
-                      <a href="{% static 'pics/02.jpg' %}">View more</a>
-                    </figcaption>
-                  </figure>
-                  <figure class="effect-goliath tm-gallery-item">
-                    <img
-                      src="{% static 'pics/03.jpg' %}"
-                      alt="Red Flowers"
-                      class=""
-                    />
-                    <figcaption>
-                      <h2>عکاسی از <span>طبیعت</span></h2>
-                      <p>محل نمایش توضیحاتی در مورد رزومه</p>
-                      <a href="{% static 'pics/03.jpg' %}">View more</a>
-                    </figcaption>
-                  </figure>
-                  <figure class="effect-goliath tm-gallery-item">
-                    <img
-                      src="{% static 'pics/04.jpg' %}"
-                      alt="Stairs"
-                      class=""
-                    />
-                    <figcaption>
-                      <h2>عکاسی <span>صنعتی</span></h2>
-                      <p>محل نمایش توضیحاتی در مورد رزومه</p>
-                      <a href="{% static 'pics/04.jpg' %}">View more</a>
-                    </figcaption>
-                  </figure>
-                  <figure class="effect-goliath tm-gallery-item">
-                    <img src="{% static 'moon.jpg' %}" alt="Image 5" class="" />
-                    <figcaption>
-                      <h2>عنوان <span>رزومه</span></h2>
-                      <p>محل نمایش توضیحاتی در مورد رزومه</p>
-                      <a href="{% static 'moon.jpg' %}">View more</a>
-                    </figcaption>
-                  </figure>
-                  <figure class="effect-goliath tm-gallery-item">
-                    <img
-                      src="{% static 'pics/06.jpg' %}"
-                      alt="Image 6"
-                      class=""
-                    />
-                    <figcaption>
-                      <h2>عنوان <span>رزومه</span></h2>
-                      <p>محل نمایش توضیحاتی در مورد رزومه</p>
-                      <a href="{% static 'pics/06.jpg' %}">View more</a>
-                    </figcaption>
-                  </figure>
-                  <figure class="effect-goliath tm-gallery-item">
-                    <img
-                      src="{% static 'pics/07.jpg' %}"
-                      alt="Image 7"
-                      class=""
-                    />
-                    <figcaption>
-                      <h2>عنوان <span>رزومه</span></h2>
-                      <p>محل نمایش توضیحاتی در مورد رزومه</p>
-                      <a href="{% static 'pics/07.jpg' %}">View more</a>
-                    </figcaption>
-                  </figure>
-                  <figure class="effect-goliath tm-gallery-item">
-                    <img
-                      src="{% static 'pics/08.jpg' %}"
-                      alt="Image 8"
-                      class=""
-                    />
-                    <figcaption>
-                      <h2>عنوان <span>رزومه</span></h2>
-                      <p>محل نمایش توضیحاتی در مورد رزومه</p>
-                      <a href="{% static 'pics/08.jpg' %}">View more</a>
-                    </figcaption>
-                  </figure>
-                  <figure class="effect-goliath tm-gallery-item">
-                    <img
-                      src="{% static 'pics/09.jpg' %}"
-                      alt="Image 9"
-                      class=""
-                    />
-                    <figcaption>
-                      <h2>عنوان <span>رزومه</span></h2>
-                      <p>محل نمایش توضیحاتی در مورد رزومه</p>
-                      <a href="{% static 'pics/09.jpg' %}">View more</a>
-                    </figcaption>
-                  </figure>
-                  <figure class="effect-goliath tm-gallery-item">
-                    <img
-                      src="{% static 'pics/10.jpg' %}"
-                      alt="Image 10"
-                      class=""
-                    />
-                    <figcaption>
-                      <h2>عنوان <span>رزومه</span></h2>
-                      <p>محل نمایش توضیحاتی در مورد رزومه</p>
-                      <a href="{% static 'pics/10.jpg' %}">View more</a>
-                    </figcaption>
-                  </figure>
-                  <figure class="effect-goliath tm-gallery-item">
-                    <img
-                      src="{% static 'pics/11.jpg' %}"
-                      alt="Image 11"
-                      class=""
-                    />
-                    <figcaption>
-                      <h2>عنوان <span>رزومه</span></h2>
-                      <p>محل نمایش توضیحاتی در مورد رزومه</p>
-                      <a href="{% static 'pics/11.jpg' %}">View more</a>
-                    </figcaption>
-                  </figure>
-                  <figure class="effect-goliath tm-gallery-item">
-                    <img
-                      src="{% static 'pics/12.jpg' %}"
-                      alt="Image 12"
-                      class=""
-                    />
-                    <figcaption>
-                      <h2>عنوان <span>رزومه</span></h2>
-                      <p>محل نمایش توضیحاتی در مورد رزومه</p>
-                      <a href="{% static 'pics/12.jpg' %}">View more</a>
-                    </figcaption>
-                  </figure>
-                </div>
-              </section>
-
-              <!-- Section 3 Contact -->
-              <section class="tm-section tm-section-3 tm-section-left">
-                <form action="" class="tm-contact-form" method="post">
-                  <div class="form-group mb-4">
-                    <input
-                      type="text"
-                      id="contact_name"
-                      name="contact_name"
-                      class="form-control"
-                      placeholder="نام شما"
-                      required
-                    />
-                  </div>
-                  <div class="form-group mb-4">
-                    <input
-                      type="email"
-                      id="contact_email"
-                      name="contact_email"
-                      class="form-control"
-                      placeholder="پست الکترونیک"
-                      required
-                    />
-                  </div>
-                  <div class="form-group mb-4">
-                    <textarea
-                      rows="4"
-                      id="contact_message"
-                      name="contact_message"
-                      class="form-control"
-                      placeholder="متن پیام"
-                      required
-                    ></textarea>
-                  </div>
-                  <div class="form-group mb-0">
-                    <button type="submit" class="btn tm-send-btn tm-fl-right">
-                      ارسال پیام
-                    </button>
-                  </div>
-                </form>
-              </section>
-            </div>
+              
+              <a href="#" id="tm_work_link" data-linkid="2" class="tm-link m-0">رزومه من</a>
           </div>
+          </section>
+
+          <!-- Section 2 Work (Gallery) -->
+          <section class="tm-section tm-section-2 mx-auto">
+            <div class="grid tm-gallery">
+              <figure class="effect-goliath tm-gallery-item">
+                <img src="{% static 'pics/01.jpg' %}" alt="Image 1" class="" />
+                <figcaption>
+                  <h2>عکاسی از <span>حیوانات</span></h2>
+                  <p>محل نمایش توضیحاتی در مورد رزومه</p>
+                  <a href="{% static 'pics/01.jpg' %}">View more</a>
+                </figcaption>
+              </figure>
+              <figure class="effect-goliath tm-gallery-item">
+                <img src="{% static 'pics/02.jpg' %}" alt="Pretty Girl" class="" />
+                <figcaption>
+                  <h2>عکاسی <span>چهره</span></h2>
+                  <p>محل نمایش توضیحاتی در مورد رزومه</p>
+                  <a href="{% static 'pics/02.jpg' %}">View more</a>
+                </figcaption>
+              </figure>
+              <figure class="effect-goliath tm-gallery-item">
+                <img src="{% static 'pics/03.jpg' %}" alt="Red Flowers" class="" />
+                <figcaption>
+                  <h2>عکاسی از <span>طبیعت</span></h2>
+                  <p>محل نمایش توضیحاتی در مورد رزومه</p>
+                  <a href="{% static 'pics/03.jpg' %}">View more</a>
+                </figcaption>
+              </figure>
+              <figure class="effect-goliath tm-gallery-item">
+                <img src="{% static 'pics/04.jpg' %}" alt="Stairs" class="" />
+                <figcaption>
+                  <h2>عکاسی <span>صنعتی</span></h2>
+                  <p>محل نمایش توضیحاتی در مورد رزومه</p>
+                  <a href="{% static 'pics/04.jpg' %}">View more</a>
+                </figcaption>
+              </figure>
+              <figure class="effect-goliath tm-gallery-item">
+                <img src="{% static 'moon.jpg' %}" alt="Image 5" class="" />
+                <figcaption>
+                  <h2>عنوان <span>رزومه</span></h2>
+                  <p>محل نمایش توضیحاتی در مورد رزومه</p>
+                  <a href="{% static 'moon.jpg' %}">View more</a>
+                </figcaption>
+              </figure>
+              <figure class="effect-goliath tm-gallery-item">
+                <img src="{% static 'pics/06.jpg' %}" alt="Image 6" class="" />
+                <figcaption>
+                  <h2>عنوان <span>رزومه</span></h2>
+                  <p>محل نمایش توضیحاتی در مورد رزومه</p>
+                  <a href="{% static 'pics/06.jpg' %}">View more</a>
+                </figcaption>
+              </figure>
+              <figure class="effect-goliath tm-gallery-item">
+                <img src="{% static 'pics/07.jpg' %}" alt="Image 7" class="" />
+                <figcaption>
+                  <h2>عنوان <span>رزومه</span></h2>
+                  <p>محل نمایش توضیحاتی در مورد رزومه</p>
+                  <a href="{% static 'pics/07.jpg' %}">View more</a>
+                </figcaption>
+              </figure>
+              <figure class="effect-goliath tm-gallery-item">
+                <img src="{% static 'pics/08.jpg' %}" alt="Image 8" class="" />
+                <figcaption>
+                  <h2>عنوان <span>رزومه</span></h2>
+                  <p>محل نمایش توضیحاتی در مورد رزومه</p>
+                  <a href="{% static 'pics/08.jpg' %}">View more</a>
+                </figcaption>
+              </figure>
+              <figure class="effect-goliath tm-gallery-item">
+                <img src="{% static 'pics/09.jpg' %}" alt="Image 9" class="" />
+                <figcaption>
+                  <h2>عنوان <span>رزومه</span></h2>
+                  <p>محل نمایش توضیحاتی در مورد رزومه</p>
+                  <a href="{% static 'pics/09.jpg' %}">View more</a>
+                </figcaption>
+              </figure>
+              <figure class="effect-goliath tm-gallery-item">
+                <img src="{% static 'pics/10.jpg' %}" alt="Image 10" class="" />
+                <figcaption>
+                  <h2>عنوان <span>رزومه</span></h2>
+                  <p>محل نمایش توضیحاتی در مورد رزومه</p>
+                  <a href="{% static 'pics/10.jpg' %}">View more</a>
+                </figcaption>
+              </figure>
+              <figure class="effect-goliath tm-gallery-item">
+                <img src="{% static 'pics/11.jpg' %}" alt="Image 11" class="" />
+                <figcaption>
+                  <h2>عنوان <span>رزومه</span></h2>
+                  <p>محل نمایش توضیحاتی در مورد رزومه</p>
+                  <a href="{% static 'pics/11.jpg' %}">View more</a>
+                </figcaption>
+              </figure>
+              <figure class="effect-goliath tm-gallery-item">
+                <img src="{% static 'pics/12.jpg' %}" alt="Image 12" class="" />
+                <figcaption>
+                  <h2>عنوان <span>رزومه</span></h2>
+                  <p>محل نمایش توضیحاتی در مورد رزومه</p>
+                  <a href="{% static 'pics/12.jpg' %}">View more</a>
+                </figcaption>
+              </figure>
+            </div>
+          </section>
+
+          <!-- Section 3 Contact -->
+          <section class="tm-section tm-section-3 tm-section-left">
+            <form action="" class="tm-contact-form" method="post">
+              <div class="form-group mb-4">
+                <input type="text" id="contact_name" name="contact_name" class="form-control" placeholder="نام شما"
+                  required />
+              </div>
+              <div class="form-group mb-4">
+                <input type="email" id="contact_email" name="contact_email" class="form-control"
+                  placeholder="پست الکترونیک" required />
+              </div>
+              <div class="form-group mb-4">
+                <textarea rows="4" id="contact_message" name="contact_message" class="form-control"
+                  placeholder="متن پیام" required></textarea>
+              </div>
+              <div class="form-group mb-0">
+                <button type="submit" class="btn tm-send-btn tm-fl-right">
+                  ارسال پیام
+                </button>
+              </div>
+            </form>
+          </section>
         </div>
       </div>
-
-      <div class="tm-bottom-container">
-        <!-- Barcode -->
-        <div class="tm-barcode-box"></div>
-      
     </div>
+  </div>
 
-    <!-- Start Scripts -->
-    <script src="{% static 'js/jquery-1.11.0.min.js' %}"></script>
-    <script src="{% static 'js/background.cycle.js' %}"></script>
-    <script src="{% static 'slick/slick.min.js' %}"></script>
-    <script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
-    <script src="{% static 'js/scripts.js' %}"></script>
-    <!-- End Scripts -->
-  </body>
-  <!-- This template has been downloaded from Webrubik.com -->
+  <div class="tm-bottom-container">
+    <!-- Barcode -->
+    <div class="tm-barcode-box"></div>
+
+  </div>
+
+  <!-- Start Scripts -->
+  <script src="{% static 'js/jquery-1.11.0.min.js' %}"></script>
+  <script src="{% static 'js/background.cycle.js' %}"></script>
+  <script src="{% static 'slick/slick.min.js' %}"></script>
+  <script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+  <script src="{% static 'js/scripts.js' %}"></script>
+  <!-- End Scripts -->
+</body>
+<!-- This template has been downloaded from Webrubik.com -->
+
 </html>
