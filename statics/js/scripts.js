@@ -6,7 +6,7 @@ let bgCycle;
 let links;
 let eachNavLink;
 
-window.onload = function() {
+window.onload = function () {
     $("body").addClass("loaded");
 };
 
@@ -31,7 +31,7 @@ function navLinkClick(e) {
     $(`.tm-nav-item:eq(${currentImageId})`).addClass("active");
 
     // Change page content
-    $(`.tm-section-${previousImageId}`).fadeOut(function(e) {
+    $(`.tm-section-${previousImageId}`).fadeOut(function (e) {
         $(`.tm-section-${currentImageId}`).fadeIn();
         // Gallery
         if (currentImageId === 2) {
@@ -42,7 +42,7 @@ function navLinkClick(e) {
     adjustFooter();
 }
 
-$(document).ready(function() {
+$(document).ready(function () {
     // Set first page
     $(".tm-section").fadeOut(0);
     $(".tm-section-0").fadeIn();
@@ -77,7 +77,7 @@ $(document).ready(function() {
     // Each menu item click
     eachNavLink.on("click", navLinkClick);
 
-    $(".tm-navbar-menu").click(function(e) {
+    $(".tm-navbar-menu").click(function (e) {
         if (links.hasClass("open")) {
             links.fadeOut();
         } else {
@@ -88,7 +88,7 @@ $(document).ready(function() {
     });
 
     // window resize
-    $(window).resize(function() {
+    $(window).resize(function () {
         // If current page is Gallery page, set it up
         if (currentImageId === 2) {
             setupSlider();
@@ -142,7 +142,7 @@ function setupSlider() {
 
     $(".tm-gallery").slick({
         dots: true,
-        customPaging: function(slider, i) {
+        customPaging: function (slider, i) {
             var thumb = $(slider.$slides[i]).data();
             return `<a>${i + 1}</a>`;
         },

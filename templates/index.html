@@ -1,4 +1,6 @@
+{% extends 'base.html' %}
 {% load static %}
+{% block content %}
 <!DOCTYPE html>
 <html lang="fa">
 
@@ -28,23 +30,7 @@
   <div class="tm-main-container">
     <div class="tm-top-container">
       <!-- Menu -->
-      <nav id="tmNav" class="tm-nav">
-        <a class="tm-navbar-menu" href="#">منو</a>
-        <ul class="tm-nav-links">
-          <li class="tm-nav-item active">
-            <a href="#" data-linkid="0" data-align="right" class="tm-nav-link">صفحه نخست</a>
-          </li>
-          <li class="tm-nav-item">
-            <a href="#" data-linkid="1" data-align="right" class="tm-nav-link">درباره من</a>
-          </li>
-          <li class="tm-nav-item">
-            <a href="#" data-linkid="2" data-align="middle" class="tm-nav-link">رزومه</a>
-          </li>
-          <li class="tm-nav-item">
-            <a href="#" data-linkid="3" data-align="left" class="tm-nav-link">تماس با من</a>
-          </li>
-        </ul>
-      </nav>
+      
 
 
       <!-- Site header -->
@@ -63,7 +49,7 @@
               </h2>
               <div class="tm-textbox tm-bg-dark">
                 <p>
-                  من برنامه‌نویسی جنگو کار می‌کنم. به عنوان یک برنامه‌نویس جنگو، توانایی‌های متعددی دارم که به من اجازه
+                  {{job}}. به عنوان یک برنامه‌نویس جنگو، توانایی‌های متعددی دارم که به من اجازه
                   می‌دهد وب‌سایت‌ها و برنامه‌های وب قدرتمند و کارآمد ایجاد کنم.
                 </p>
                 <h2>توانایی‌های من:</h2>
@@ -93,17 +79,16 @@
               <div class="tm-textbox tm-textbox-2 tm-bg-dark">
                 <h2 class="tm-text-blue mb-4">درباره من</h2>
                 <p>
-                  من امیرمحمد رضایی هستم، دانشجوی رشته کامپیوتر و برنامه‌نویس جنگو با تجربه در طراحی و توسعه وب‌سایت‌ها
+                  من {{author}} هستم، {{major}} و برنامه‌نویس جنگو با تجربه در طراحی و توسعه وب‌سایت‌ها
                   و سیستم‌های وب. با علاقه به کار تیمی و توانمندی در حل مسائل، همیشه در حال بهبود عملکرد و بهینه‌سازی
                   فرآیندها هستم.
                 </p>
               </div>
 
-              
+
               <a href="#" id="tm_work_link" data-linkid="2" class="tm-link m-0">رزومه من</a>
           </div>
           </section>
-
           <!-- Section 2 Work (Gallery) -->
           <section class="tm-section tm-section-2 mx-auto">
             <div class="grid tm-gallery">
@@ -140,11 +125,11 @@
                 </figcaption>
               </figure>
               <figure class="effect-goliath tm-gallery-item">
-                <img src="{% static 'moon.jpg' %}" alt="Image 5" class="" />
+                <img src="{% static 'pics/05.jpg' %}" alt="Image 5" class="" />
                 <figcaption>
                   <h2>عنوان <span>رزومه</span></h2>
                   <p>محل نمایش توضیحاتی در مورد رزومه</p>
-                  <a href="{% static 'moon.jpg' %}">View more</a>
+                  <a href="{% static 'pics/05.jpg' %}">View more</a>
                 </figcaption>
               </figure>
               <figure class="effect-goliath tm-gallery-item">
@@ -163,7 +148,7 @@
                   <a href="{% static 'pics/07.jpg' %}">View more</a>
                 </figcaption>
               </figure>
-              <figure class="effect-goliath tm-gallery-item">
+              <figure class=" effect-goliath tm-gallery-item">
                 <img src="{% static 'pics/08.jpg' %}" alt="Image 8" class="" />
                 <figcaption>
                   <h2>عنوان <span>رزومه</span></h2>
@@ -222,9 +207,7 @@
                   placeholder="متن پیام" required></textarea>
               </div>
               <div class="form-group mb-0">
-                <button type="submit" class="btn tm-send-btn tm-fl-right">
-                  ارسال پیام
-                </button>
+                <button type="submit" class="btn tm-send-btn tm-fl-right">ارسال پیام</button>
               </div>
             </form>
           </section>
@@ -233,20 +216,6 @@
     </div>
   </div>
 
-  <div class="tm-bottom-container">
-    <!-- Barcode -->
-    <div class="tm-barcode-box"></div>
 
-  </div>
-
-  <!-- Start Scripts -->
-  <script src="{% static 'js/jquery-1.11.0.min.js' %}"></script>
-  <script src="{% static 'js/background.cycle.js' %}"></script>
-  <script src="{% static 'slick/slick.min.js' %}"></script>
-  <script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
-  <script src="{% static 'js/scripts.js' %}"></script>
-  <!-- End Scripts -->
-</body>
-<!-- This template has been downloaded from Webrubik.com -->
-
-</html>
+  
+{% endblock %}
